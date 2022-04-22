@@ -1,3 +1,9 @@
 {
-  "extends": "@tsconfig/node14/tsconfig.json"
+  "extends": "@tsconfig/node14/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "npm-api": ["@types/npm-api.d.ts"]
+    }
+  }
 }

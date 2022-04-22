@@ -9,7 +9,7 @@
     "format": "prettier --write .",
     "lint": "eslint .",
     "prepare": "husky install",
-    "main": "ts-node index.ts"
+    "main": "ts-node src/index.ts"
   },
   "bin": {
     "audivisor": "index.js"
@@ -28,6 +28,7 @@
     "typescript": "^4.6.3"
   },
   "dependencies": {
+    "npm-api": "^1.0.1",
     "picocolors": "^1.0.0"
   },
   "lint-staged": {
