@@ -23,7 +23,7 @@
   "engines": {},
   "keywords": [],
   "devDependencies": {
-    "@tsconfig/node14": "^1.0.1",
+    "@tsconfig/node12": "^1.0.9",
     "@types/jest": "^27.4.1",
     "@types/node": "^17.0.25",
     "@types/semver": "^7.3.9",
