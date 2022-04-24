@@ -11,7 +11,7 @@ export function log(level: LogLevel, message: string) {
       ? picocolors.bgYellow(bold)
       : picocolors.bgCyan(bold);
 
-  console.log(`${prefix} ${message}`);
+  console[level](`${prefix} ${message}`);
 }
 
 export function info(message: string) {
