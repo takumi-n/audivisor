@@ -4,6 +4,7 @@
     "baseUrl": ".",
     "paths": {
       "npm-api": ["@types/npm-api.d.ts"]
-    }
+    },
+    "resolveJsonModule": true
   }
 }

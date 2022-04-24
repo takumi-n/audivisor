@@ -1,0 +1,288 @@
+[
+  {
+    "type": "auditAdvisory",
+    "data": {
+      "resolution": {
+        "id": 1069917,
+        "path": "@types/chart.js>moment",
+        "dev": false,
+        "optional": false,
+        "bundled": false
+      },
+      "advisory": {
+        "findings": [
+          {
+            "version": "2.10.2",
+            "paths": ["@types/chart.js>moment", "npm-api>download-stats>moment"]
+          }
+        ],
+        "metadata": null,
+        "vulnerable_versions": "<2.19.3",
+        "module_name": "moment",
+        "severity": "high",
+        "github_advisory_id": "GHSA-446m-mv8f-q348",
+        "cves": ["CVE-2017-18214"],
+        "access": "public",
+        "patched_versions": ">=2.19.3",
+        "cvss": {
+          "score": 7.5,
+          "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        "updated": "2021-08-31T21:44:16.000Z",
+        "recommendation": "Upgrade to version 2.19.3 or later",
+        "cwe": ["CWE-400"],
+        "found_by": null,
+        "deleted": null,
+        "id": 1069917,
+        "references": "- https://nvd.nist.gov/vuln/detail/CVE-2017-18214\n- https://github.com/moment/moment/issues/4163\n- https://github.com/moment/moment/pull/4326\n- https://github.com/advisories/GHSA-446m-mv8f-q348\n- https://www.npmjs.com/advisories/532\n- https://nodesecurity.io/advisories/532\n- https://www.tenable.com/security/tns-2019-02",
+        "created": "2018-03-05T18:35:09.000Z",
+        "reported_by": null,
+        "title": "Regular Expression Denial of Service in moment",
+        "npm_advisory_id": null,
+        "overview": "Affected versions of `moment` are vulnerable to a low severity regular expression denial of service when parsing dates as strings.\n\n\n## Recommendation\n\nUpdate to version 2.19.3 or later.",
+        "url": "https://github.com/advisories/GHSA-446m-mv8f-q348"
+      }
+    }
+  },
+  {
+    "type": "auditAdvisory",
+    "data": {
+      "resolution": {
+        "id": 1069917,
+        "path": "npm-api>download-stats>moment",
+        "dev": false,
+        "optional": false,
+        "bundled": false
+      },
+      "advisory": {
+        "findings": [
+          {
+            "version": "2.10.2",
+            "paths": ["@types/chart.js>moment", "npm-api>download-stats>moment"]
+          }
+        ],
+        "metadata": null,
+        "vulnerable_versions": "<2.19.3",
+        "module_name": "moment",
+        "severity": "high",
+        "github_advisory_id": "GHSA-446m-mv8f-q348",
+        "cves": ["CVE-2017-18214"],
+        "access": "public",
+        "patched_versions": ">=2.19.3",
+        "cvss": {
+          "score": 7.5,
+          "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        "updated": "2021-08-31T21:44:16.000Z",
+        "recommendation": "Upgrade to version 2.19.3 or later",
+        "cwe": ["CWE-400"],
+        "found_by": null,
+        "deleted": null,
+        "id": 1069917,
+        "references": "- https://nvd.nist.gov/vuln/detail/CVE-2017-18214\n- https://github.com/moment/moment/issues/4163\n- https://github.com/moment/moment/pull/4326\n- https://github.com/advisories/GHSA-446m-mv8f-q348\n- https://www.npmjs.com/advisories/532\n- https://nodesecurity.io/advisories/532\n- https://www.tenable.com/security/tns-2019-02",
+        "created": "2018-03-05T18:35:09.000Z",
+        "reported_by": null,
+        "title": "Regular Expression Denial of Service in moment",
+        "npm_advisory_id": null,
+        "overview": "Affected versions of `moment` are vulnerable to a low severity regular expression denial of service when parsing dates as strings.\n\n\n## Recommendation\n\nUpdate to version 2.19.3 or later.",
+        "url": "https://github.com/advisories/GHSA-446m-mv8f-q348"
+      }
+    }
+  },
+  {
+    "type": "auditAdvisory",
+    "data": {
+      "resolution": {
+        "id": 1069966,
+        "path": "@types/chart.js>moment",
+        "dev": false,
+        "optional": false,
+        "bundled": false
+      },
+      "advisory": {
+        "findings": [
+          {
+            "version": "2.10.2",
+            "paths": ["@types/chart.js>moment", "npm-api>download-stats>moment"]
+          }
+        ],
+        "metadata": null,
+        "vulnerable_versions": "<2.11.2",
+        "module_name": "moment",
+        "severity": "moderate",
+        "github_advisory_id": "GHSA-87vv-r9j6-g5qv",
+        "cves": ["CVE-2016-4055"],
+        "access": "public",
+        "patched_versions": ">=2.11.2",
+        "cvss": {
+          "score": 6.5,
+          "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+        },
+        "updated": "2021-09-07T14:33:56.000Z",
+        "recommendation": "Upgrade to version 2.11.2 or later",
+        "cwe": ["CWE-400"],
+        "found_by": null,
+        "deleted": null,
+        "id": 1069966,
+        "references": "- https://nvd.nist.gov/vuln/detail/CVE-2016-4055\n- https://github.com/advisories/GHSA-87vv-r9j6-g5qv\n- https://www.npmjs.com/advisories/55\n- https://lists.apache.org/thread.html/10f0f3aefd51444d1198c65f44ffdf2d78ca3359423dbc1c168c9731@%3Cdev.flink.apache.org%3E\n- https://lists.apache.org/thread.html/17ff53f7999e74fbe3cc0ceb4e1c3b00b180b7c5afec8e978837bc49@%3Cuser.flink.apache.org%3E\n- https://lists.apache.org/thread.html/52bafac05ad174000ea465fe275fd3cc7bd5c25535a7631c0bc9bfb2@%3Cuser.flink.apache.org%3E\n- https://lists.apache.org/thread.html/54df3aeb4239b64b50b356f0ca6f986e3c4ca5b84c515dce077c7854@%3Cuser.flink.apache.org%3E\n- https://nodesecurity.io/advisories/55\n- https://www.tenable.com/security/tns-2019-02\n- http://www.openwall.com/lists/oss-security/2016/04/20/11\n- http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html\n- http://www.securityfocus.com/bid/95849",
+        "created": "2017-10-24T18:33:35.000Z",
+        "reported_by": null,
+        "title": "Regular Expression Denial of Service in moment",
+        "npm_advisory_id": null,
+        "overview": "Versions of `moment` prior to 2.11.2 are affected by a regular expression denial of service vulnerability. The vulnerability is triggered when arbitrary user input is passed into `moment.duration()`.\n\n\n## Proof of concept\n```\nvar moment = require('moment');\n\nvar genstr = function (len, chr) {\n    var result = \"\";\n    for (i=0; i<=len; i++) {\n        result = result + chr;\n    }\n\n    return result;\n}\n\n\nfor (i=20000;i<=10000000;i=i+10000) {\n    console.log(\"COUNT: \" + i);\n    var str = '-' + genstr(i, '1')\n    console.log(\"LENGTH: \" + str.length);\n    var start = process.hrtime();\n    moment.duration(str)\n\n    var end = process.hrtime(start);\n    console.log(end);\n}\n```\n\n### Results\n```\n$ node moment.js\nCOUNT: 20000\nLENGTH: 20002\n[ 0, 618931029 ]\nCOUNT: 30001\nLENGTH: 30003\n[ 1, 401413894 ]\nCOUNT: 40002\nLENGTH: 40004\n[ 2, 437075303 ]\nCOUNT: 50003\nLENGTH: 50005\n[ 3, 824664804 ]\nCOUNT: 60004\nLENGTH: 60006\n[ 5, 651335262 ]\n```\n\n\n## Recommendation\n\nPlease update to version 2.11.2 or later. ",
+        "url": "https://github.com/advisories/GHSA-87vv-r9j6-g5qv"
+      }
+    }
+  },
+  {
+    "type": "auditAdvisory",
+    "data": {
+      "resolution": {
+        "id": 1069966,
+        "path": "npm-api>download-stats>moment",
+        "dev": false,
+        "optional": false,
+        "bundled": false
+      },
+      "advisory": {
+        "findings": [
+          {
+            "version": "2.10.2",
+            "paths": ["@types/chart.js>moment", "npm-api>download-stats>moment"]
+          }
+        ],
+        "metadata": null,
+        "vulnerable_versions": "<2.11.2",
+        "module_name": "moment",
+        "severity": "moderate",
+        "github_advisory_id": "GHSA-87vv-r9j6-g5qv",
+        "cves": ["CVE-2016-4055"],
+        "access": "public",
+        "patched_versions": ">=2.11.2",
+        "cvss": {
+          "score": 6.5,
+          "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+        },
+        "updated": "2021-09-07T14:33:56.000Z",
+        "recommendation": "Upgrade to version 2.11.2 or later",
+        "cwe": ["CWE-400"],
+        "found_by": null,
+        "deleted": null,
+        "id": 1069966,
+        "references": "- https://nvd.nist.gov/vuln/detail/CVE-2016-4055\n- https://github.com/advisories/GHSA-87vv-r9j6-g5qv\n- https://www.npmjs.com/advisories/55\n- https://lists.apache.org/thread.html/10f0f3aefd51444d1198c65f44ffdf2d78ca3359423dbc1c168c9731@%3Cdev.flink.apache.org%3E\n- https://lists.apache.org/thread.html/17ff53f7999e74fbe3cc0ceb4e1c3b00b180b7c5afec8e978837bc49@%3Cuser.flink.apache.org%3E\n- https://lists.apache.org/thread.html/52bafac05ad174000ea465fe275fd3cc7bd5c25535a7631c0bc9bfb2@%3Cuser.flink.apache.org%3E\n- https://lists.apache.org/thread.html/54df3aeb4239b64b50b356f0ca6f986e3c4ca5b84c515dce077c7854@%3Cuser.flink.apache.org%3E\n- https://nodesecurity.io/advisories/55\n- https://www.tenable.com/security/tns-2019-02\n- http://www.openwall.com/lists/oss-security/2016/04/20/11\n- http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html\n- http://www.securityfocus.com/bid/95849",
+        "created": "2017-10-24T18:33:35.000Z",
+        "reported_by": null,
+        "title": "Regular Expression Denial of Service in moment",
+        "npm_advisory_id": null,
+        "overview": "Versions of `moment` prior to 2.11.2 are affected by a regular expression denial of service vulnerability. The vulnerability is triggered when arbitrary user input is passed into `moment.duration()`.\n\n\n## Proof of concept\n```\nvar moment = require('moment');\n\nvar genstr = function (len, chr) {\n    var result = \"\";\n    for (i=0; i<=len; i++) {\n        result = result + chr;\n    }\n\n    return result;\n}\n\n\nfor (i=20000;i<=10000000;i=i+10000) {\n    console.log(\"COUNT: \" + i);\n    var str = '-' + genstr(i, '1')\n    console.log(\"LENGTH: \" + str.length);\n    var start = process.hrtime();\n    moment.duration(str)\n\n    var end = process.hrtime(start);\n    console.log(end);\n}\n```\n\n### Results\n```\n$ node moment.js\nCOUNT: 20000\nLENGTH: 20002\n[ 0, 618931029 ]\nCOUNT: 30001\nLENGTH: 30003\n[ 1, 401413894 ]\nCOUNT: 40002\nLENGTH: 40004\n[ 2, 437075303 ]\nCOUNT: 50003\nLENGTH: 50005\n[ 3, 824664804 ]\nCOUNT: 60004\nLENGTH: 60006\n[ 5, 651335262 ]\n```\n\n\n## Recommendation\n\nPlease update to version 2.11.2 or later. ",
+        "url": "https://github.com/advisories/GHSA-87vv-r9j6-g5qv"
+      }
+    }
+  },
+  {
+    "type": "auditAdvisory",
+    "data": {
+      "resolution": {
+        "id": 1069972,
+        "path": "@types/chart.js>moment",
+        "dev": false,
+        "optional": false,
+        "bundled": false
+      },
+      "advisory": {
+        "findings": [
+          {
+            "version": "2.10.2",
+            "paths": ["@types/chart.js>moment", "npm-api>download-stats>moment"]
+          }
+        ],
+        "metadata": null,
+        "vulnerable_versions": "<2.29.2",
+        "module_name": "moment",
+        "severity": "high",
+        "github_advisory_id": "GHSA-8hfj-j24r-96c4",
+        "cves": ["CVE-2022-24785"],
+        "access": "public",
+        "patched_versions": ">=2.29.2",
+        "cvss": {
+          "score": 7.5,
+          "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+        },
+        "updated": "2022-04-08T22:44:07.000Z",
+        "recommendation": "Upgrade to version 2.29.2 or later",
+        "cwe": ["CWE-22", "CWE-27"],
+        "found_by": null,
+        "deleted": null,
+        "id": 1069972,
+        "references": "- https://github.com/moment/moment/security/advisories/GHSA-8hfj-j24r-96c4\n- https://nvd.nist.gov/vuln/detail/CVE-2022-24785\n- https://github.com/moment/moment/commit/4211bfc8f15746be4019bba557e29a7ba83d54c5\n- https://github.com/advisories/GHSA-8hfj-j24r-96c4",
+        "created": "2022-04-04T21:25:48.000Z",
+        "reported_by": null,
+        "title": "Path Traversal: 'dir/../../filename' in moment.locale",
+        "npm_advisory_id": null,
+        "overview": "### Impact\nThis vulnerability impacts npm (server) users of moment.js, especially if user provided locale string, eg `fr` is directly used to switch moment locale.\n\n### Patches\nThis problem is patched in 2.29.2, and the patch can be applied to all affected versions (from 1.0.1 up until 2.29.1, inclusive).\n\n### Workarounds\nSanitize user-provided locale name before passing it to moment.js.\n\n### References\n_Are there any links users can visit to find out more?_\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Open an issue in [moment repo](https://github.com/moment/moment)\n",
+        "url": "https://github.com/advisories/GHSA-8hfj-j24r-96c4"
+      }
+    }
+  },
+  {
+    "type": "auditAdvisory",
+    "data": {
+      "resolution": {
+        "id": 1069972,
+        "path": "npm-api>download-stats>moment",
+        "dev": false,
+        "optional": false,
+        "bundled": false
+      },
+      "advisory": {
+        "findings": [
+          {
+            "version": "2.10.2",
+            "paths": ["@types/chart.js>moment", "npm-api>download-stats>moment"]
+          }
+        ],
+        "metadata": null,
+        "vulnerable_versions": "<2.29.2",
+        "module_name": "moment",
+        "severity": "high",
+        "github_advisory_id": "GHSA-8hfj-j24r-96c4",
+        "cves": ["CVE-2022-24785"],
+        "access": "public",
+        "patched_versions": ">=2.29.2",
+        "cvss": {
+          "score": 7.5,
+          "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+        },
+        "updated": "2022-04-08T22:44:07.000Z",
+        "recommendation": "Upgrade to version 2.29.2 or later",
+        "cwe": ["CWE-22", "CWE-27"],
+        "found_by": null,
+        "deleted": null,
+        "id": 1069972,
+        "references": "- https://github.com/moment/moment/security/advisories/GHSA-8hfj-j24r-96c4\n- https://nvd.nist.gov/vuln/detail/CVE-2022-24785\n- https://github.com/moment/moment/commit/4211bfc8f15746be4019bba557e29a7ba83d54c5\n- https://github.com/advisories/GHSA-8hfj-j24r-96c4",
+        "created": "2022-04-04T21:25:48.000Z",
+        "reported_by": null,
+        "title": "Path Traversal: 'dir/../../filename' in moment.locale",
+        "npm_advisory_id": null,
+        "overview": "### Impact\nThis vulnerability impacts npm (server) users of moment.js, especially if user provided locale string, eg `fr` is directly used to switch moment locale.\n\n### Patches\nThis problem is patched in 2.29.2, and the patch can be applied to all affected versions (from 1.0.1 up until 2.29.1, inclusive).\n\n### Workarounds\nSanitize user-provided locale name before passing it to moment.js.\n\n### References\n_Are there any links users can visit to find out more?_\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Open an issue in [moment repo](https://github.com/moment/moment)\n",
+        "url": "https://github.com/advisories/GHSA-8hfj-j24r-96c4"
+      }
+    }
+  },
+  {
+    "type": "auditSummary",
+    "data": {
+      "vulnerabilities": {
+        "info": 0,
+        "low": 0,
+        "moderate": 2,
+        "high": 4,
+        "critical": 0
+      },
+      "dependencies": 267,
+      "devDependencies": 0,
+      "optionalDependencies": 0,
+      "totalDependencies": 267
+    }
+  }
+]
