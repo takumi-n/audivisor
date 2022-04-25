@@ -1,0 +1,1 @@
+export { suggestAuditSolution } from './resolve';
