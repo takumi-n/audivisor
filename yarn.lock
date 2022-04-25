@@ -2855,10 +2855,10 @@ minimatch@^3.0.4:
   dependencies:
     brace-expansion "^1.1.7"
 
-moment@^2.15.1, moment@^2.24.0:
-  version "2.29.3"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.3.tgz#edd47411c322413999f7a5940d526de183c031f3"
-  integrity sha512-c6YRvhEo//6T2Jz/vVtYzqBzwvPT95JBQ+smCytzf7c50oMZRsR/a4w88aD34I+/QVSfnoAnSBFPJHItlOMJVw==
+moment@2.10.2, moment@^2.15.1, moment@^2.24.0:
+  version "2.10.2"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.10.2.tgz#faf8c09ca82f03f94962e3b5a7239263ea50d087"
+  integrity sha1-+vjAnKgvA/lJYuO1pyOSY+pQ0Ic=
 
 ms@2.1.2:
   version "2.1.2"
