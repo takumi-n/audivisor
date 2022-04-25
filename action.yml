@@ -2,7 +2,6 @@ name: 'audivisor'
 description: 'Run audivisor'
 author: 'takumi-n'
 runs:
-  using: 'docker'
-  image: 'ubuntu-latest'
+  using: 'composite'
   steps:
     - run: echo hello
