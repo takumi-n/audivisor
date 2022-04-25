@@ -935,17 +935,6 @@ asynckit@^0.4.0:
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
   integrity sha1-x57Zf380y48robyXkLzDZkdLS3k=
 
-audivisor@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/audivisor/-/audivisor-0.0.2.tgz#fc25d4e5e49964e5c4bf9c325666792dd76b4939"
-  integrity sha512-FvCukd1TcT4HtXZPyxstjYe2bdr69JadH7ulNEceH4JBVhAhV7YLHweJtn2zLCJyJKZFG86aHzRKjkXTh7NC+Q==
-  dependencies:
-    cac "^6.7.12"
-    columnify "^1.6.0"
-    npm-api "^1.0.1"
-    picocolors "^1.0.0"
-    semver "^7.3.7"
-
 axios@^0.21.1:
   version "0.21.4"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"

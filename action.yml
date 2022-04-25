@@ -1,0 +1,8 @@
+name: 'audivisor'
+description: 'Run audivisor'
+author: 'takumi-n'
+runs:
+  using: 'docker'
+  image: 'ubuntu-latest'
+  steps:
+    - run: echo hello
