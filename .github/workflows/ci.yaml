@@ -6,7 +6,7 @@ on:
 jobs:
   audivisor:
     name: 'Run audivisor'
-    runs-on: ubuntu-lates
+    runs-on: ubuntu-latest
     steps:
       - uses: takumi-n/audivisor@gatest1
   test:
