@@ -1,5 +1,6 @@
 import semver from 'semver';
-import { Audit, normalizeAudits } from '../audit';
+import { Audit } from '../model';
+import { normalizeAudits } from '../convert';
 
 describe('semver', () => {
   test('Detect minimum patched version', () => {

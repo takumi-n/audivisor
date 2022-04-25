@@ -1,16 +1,5 @@
 import semver from 'semver';
-
-export type Audit = {
-  pkg: string;
-  paths: string[];
-  patchedVersions: string;
-};
-
-export type NormalizedAudits = {
-  [packageName: string]: {
-    [path: string]: string;
-  };
-};
+import { Audit, NormalizedAudits } from './model';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function convertAuditObj(obj: any): Audit {
@@ -45,4 +34,8 @@ export function normalizeAudits(audits: Audit[]): NormalizedAudits {
   });
 
   return normalized;
+}
+
+export function parsePath(path: string): string[] {
+  return path.split('>');
 }
