@@ -1,1 +1,1 @@
-export { suggestAuditSolution } from './resolve';
+export { suggestAuditSolution, AuditSolution } from './resolve';

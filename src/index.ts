@@ -4,10 +4,13 @@ import { execYarnAudit } from './exec';
 import * as logger from './logger';
 import { Audit, convertAuditObj, normalizeAudits } from './audit';
 import pkg from '../package.json';
+import { suggestAuditSolution } from './package';
+import { outpuJsonSolution, outputTextSolution } from './package/formatter';
 
 async function main() {
   const cli = cac(pkg.name);
   cli.option('-f, --file <file>', 'File to read from');
+  cli.option('--json', 'Output in JSON format');
   cli.version(pkg.version);
   cli.help();
   const parsed = cli.parse();
@@ -47,7 +50,13 @@ async function main() {
   }
 
   const normalized = normalizeAudits(audits);
-  console.log(JSON.stringify(normalized, null, 2));
+  const result = await suggestAuditSolution(normalized);
+
+  if (parsed.options.json) {
+    outpuJsonSolution(result);
+  } else {
+    outputTextSolution(result);
+  }
 }
 
 main();

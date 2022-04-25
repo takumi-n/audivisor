@@ -24,6 +24,7 @@
   "keywords": [],
   "devDependencies": {
     "@tsconfig/node12": "^1.0.9",
+    "@types/columnify": "^1.5.1",
     "@types/jest": "^27.4.1",
     "@types/node": "^17.0.25",
     "@types/semver": "^7.3.9",
@@ -41,6 +42,7 @@
   },
   "dependencies": {
     "cac": "^6.7.12",
+    "columnify": "^1.6.0",
     "npm-api": "^1.0.1",
     "picocolors": "^1.0.0",
     "semver": "^7.3.7"
