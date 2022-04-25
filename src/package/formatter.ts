@@ -3,8 +3,13 @@ import picocolors from 'picocolors';
 import { AuditSolution } from './resolve';
 
 export function outputTextSolution(result: AuditSolution) {
-  console.log(
-    `
+  if (result.resolution.length === 0 && result.upgrade.length === 0) {
+    return;
+  }
+
+  let output = '';
+  if (result.upgrade.length > 0) {
+    output += `
 ${picocolors.bgGreen(picocolors.bold(' Upgrading '))}
 You can resolve the vulnerabilities by upgrading dependent packages.
 
@@ -21,9 +26,12 @@ ${columnify(result.upgrade, {
       align: 'center',
     },
   },
-})}
+})}`;
+  }
 
-${picocolors.bgYellow(picocolors.bold(' Resolution '))}
+  if (result.resolution.length > 0) {
+    output += `
+    ${picocolors.bgYellow(picocolors.bold(' Resolution '))}
 You can resolve the vulnerabilities by dependency resolution.
 see: https://classic.yarnpkg.com/lang/en/docs/selective-version-resolutions/
 
@@ -41,9 +49,10 @@ ${columnify(result.resolution, {
       align: 'center',
     },
   },
-})}
-`
-  );
+})}`;
+  }
+
+  console.log(output);
 }
 
 export function outpuJsonSolution(result: AuditSolution) {
