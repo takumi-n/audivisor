@@ -1,7 +1,7 @@
 import { cac } from 'cac';
 import fs from 'fs';
 import { execYarnAudit } from './exec';
-import { error } from './logger';
+import * as logger from './logger';
 import { Audit, convertAuditObj, normalizeAudits } from './audit';
 import pkg from '../package.json';
 
@@ -20,13 +20,13 @@ async function main() {
         typeof parsed.options.file !== 'number') ||
       `${parsed.options.file}` === ''
     ) {
-      error('File must be specified');
+      logger.error('File must be specified');
       process.exit(1);
     }
 
     const file = `${parsed.options.file}`;
     if (!fs.existsSync(file)) {
-      error(`File ${file} does not exist`);
+      logger.error(`File ${file} does not exist`);
       process.exit(1);
     }
 
@@ -51,10 +51,3 @@ async function main() {
 }
 
 main();
-
-// const npm = new NpmApi();
-
-// npm
-//   .repo('handsontable')
-//   .dependencies()
-//   .then((packages: any) => console.log(packages));
