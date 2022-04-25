@@ -53,7 +53,7 @@ export async function canResolveVuln(
       continue;
     }
 
-    return semver.satisfies(version, minPatchedVersion);
+    return semver.satisfies(version, `>=${minPatchedVersion}`);
   }
 
   return false;
