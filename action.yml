@@ -4,7 +4,14 @@ author: 'takumi-n'
 runs:
   using: 'composite'
   steps:
-    - run: npx audivisor
+    - id: run_audivisor
+      run: |
+        result=$(npx audivisor --markdown)
+        result="${result//$'\n'/\\n}"
+        echo "::set-output result::$result"
       shell: bash
-    - run: echo Done
-      shell: bash
+    - uses: mshick/add-pr-comment@v1
+        with:
+          message: ${{ stesp.run_audivisor.outputs.result }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token-user-login: 'audivisor[bot]'

@@ -4,12 +4,6 @@ on:
   push:
 
 jobs:
-  audivisor:
-    name: 'Run audivisor'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: takumi-n/audivisor@gatest5
   test:
     name: 'Test & Build: Node v${{ matrix.node-version }}'
     runs-on: ubuntu-latest
