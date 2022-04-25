@@ -17,7 +17,7 @@ describe('version', () => {
 
     expect(await suggestAuditSolution(normalized)).toEqual({
       upgrade: [{ vulnPkg: 'moment', pkg: 'npm-api' }],
-      resoluton: [],
+      resolution: [],
     });
   });
 });
