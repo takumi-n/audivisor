@@ -3,6 +3,12 @@ on:
 
 jobs:
   audivisor:
+    name: 'Run audivisor'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: takumi-n/audivisor@gatest5
+  audivisor:
     runs-on: ubuntu-latest
     steps:
       - uses: mshick/add-pr-comment@v1
@@ -12,5 +18,4 @@ jobs:
             🌏
             !
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          repo-token-user-login: 'github-actions[bot]' # The user.login for temporary GitHub tokens
-          allow-repeats: false # This is the default
+          repo-token-user-login: 'audivisor[bot]'
