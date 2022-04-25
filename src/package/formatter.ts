@@ -55,6 +55,11 @@ ${columnify(result.resolution, {
   console.log(output);
 }
 
+export function outputMarkdownSolution(result: AuditSolution) {
+  // TODO:
+  console.log(`# Hello world`);
+}
+
 export function outpuJsonSolution(result: AuditSolution) {
   console.log(JSON.stringify(result));
 }
