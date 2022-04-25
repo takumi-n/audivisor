@@ -57,6 +57,10 @@ async function main() {
   } else {
     outputTextSolution(result);
   }
+
+  if (result.resolution.length > 0 || result.upgrade.length > 0) {
+    process.exit(1);
+  }
 }
 
 main();
