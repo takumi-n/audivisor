@@ -4,5 +4,5 @@ author: 'takumi-n'
 runs:
   using: 'composite'
   steps:
-    - run: echo hello
+    - run: npx audivisor --json
       shell: bash

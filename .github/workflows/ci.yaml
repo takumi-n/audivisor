@@ -8,7 +8,7 @@ jobs:
     name: 'Run audivisor'
     runs-on: ubuntu-latest
     steps:
-      - uses: takumi-n/audivisor@gatest3
+      - uses: takumi-n/audivisor@gatest4
   test:
     name: 'Test & Build: Node v${{ matrix.node-version }}'
     runs-on: ubuntu-latest
