@@ -7,12 +7,17 @@ import * as logger from './logger';
 import { Audit, convertAuditObj, normalizeAudits } from './audit';
 import pkg from '../package.json';
 import { suggestAuditSolution } from './package';
-import { outpuJsonSolution, outputTextSolution } from './package/formatter';
+import {
+  outpuJsonSolution,
+  outputMarkdownSolution,
+  outputTextSolution,
+} from './package/formatter';
 
 async function main() {
   const cli = cac(pkg.name);
   cli.option('-f, --file <file>', 'File to read from');
   cli.option('--json', 'Output in JSON format');
+  cli.option('--markdown', 'Output in markdown format');
   cli.version(pkg.version);
   cli.help();
   const parsed = cli.parse();
@@ -56,6 +61,8 @@ async function main() {
 
   if (parsed.options.json) {
     outpuJsonSolution(result);
+  } else if (parsed.options.markdown) {
+    outputMarkdownSolution(result);
   } else {
     outputTextSolution(result);
   }
