@@ -11,7 +11,7 @@ runs:
         echo "::set-output result::$result"
       shell: bash
     - uses: mshick/add-pr-comment@v1
-        with:
-          message: ${{ stesp.run_audivisor.outputs.result }}
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          repo-token-user-login: 'audivisor[bot]'
+      with:
+        message: ${{ stesp.run_audivisor.outputs.result }}
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        repo-token-user-login: 'audivisor[bot]'
