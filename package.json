@@ -20,7 +20,9 @@
   "bin": {
     "audivisor": "index.js"
   },
-  "engines": {},
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "keywords": [],
   "devDependencies": {
     "@tsconfig/node12": "^1.0.9",

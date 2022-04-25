@@ -11,7 +11,7 @@ describe('version', () => {
   test('suggestAuditSolution', async () => {
     const normalized: NormalizedAudits = {
       moment: {
-        'npm-api>download-stats>moment': '>=2.29.2',
+        'npm-api>download-stats>moment': '2.29.2',
       },
     };
 
